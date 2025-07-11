@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
 // MongoDB Connection using .env
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
